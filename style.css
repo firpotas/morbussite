@@ -1,68 +1,300 @@
-* {
-    margin: 0;
+*{
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 
-body {
+header{
+    background-color:#CFE0C3;    
+    height: 75px;
+}
+
+main{
     background-color: #0B2027;
 }
 
-.nav-container {
-    background-color: #cfe0c3;
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+}
+
+.nav-cabecalho{
     display: flex;
     justify-content: space-between;
     width: 100%;
     gap: 30px 100px;
-    color: #000;
     padding: 16px 100px 16px 23px;
-    font-family: 400 30px Alyssum, sans-serif;
 }
 
-.brand-name {
-    font-weight: bold;
+.nav-cabecalho a{
+    font-size: 30px;
 }
 
-.nav-item a {
-    text-decoration: none;
-    color: #000;
+.morbus{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 800;
 }
 
-.morbus-intro {
+.titulo-texto{
+    padding: 150px 0px 40px 100px;
+}
+
+
+.p1{
     display: flex;
-    flex-direction: column;
-    margin-top: 70px;
-    margin-left: 100px;
-    font-size: 30px
+    height: 100svh;
+    
 }
 
-.intro-content {
+.geral img{
     display: flex;
-    width: 360px;
-    max-width: 100%;
-    flex-direction: column;
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    right: 50px;
+    top: 150px;
 }
 
-.morbus-title {
-    color: #538e96;
-    text-align: center;
-    align-self: start;
+.titulo-morbus{
+    font-size: 50px;
+    color: #538E96;
 }
 
-.intro-description {
+.p1 p{
     color: #fff;
-    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-    margin-top: 17px;
-    font: 800 30px/30px "Neue Machina";
-    border: 1px solid #000;
+    width: 360px;
+    height: 210px;
+    font-size: 30px;
 }
 
-.action-button {
-    border-radius: 59px;
-    background-color: #cfe0c3;
-    display: flex;
-    margin-top: 91px;
+
+.botao-pergunta{
+    background-color: #CFE0C3;
+    border-radius: 40px;
+    width: 507px;
     height: 76px;
-    width: 500px;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+
+.botao-pergunta input{
+    background-color: #CFE0C3;
+    width: 400px;
+    height:60px ;
+    font-size:30px ;
+    border: none;
+}
+
+#pergunta-usuario::placeholder{
+    font-size: 30px;
+    color: black;
+}
+
+
+.p2,
+.p3,
+.p4{
+    height: 100svh;
+}
+
+.respiratorio,
+.digestorio{
+    color: #538E96;
+    text-align: center;
+    font-size: 70px;
+}
+
+.geral-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.geral-2 img,
+.geral-4 img{
+    margin-left: -10px;
+}
+
+.geral-2 button{
+    background-color: #CFE0C3;
+    width: 350px;
+    height: 242px;
+    border-radius: 40px;
+}
+
+.geral-3 h2{
+    color: #CFE0C3;
+    font-size: 40px;
+    text-align: center;
+}
+
+.geral-3 p{
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+}
+
+.textos-cima,
+.textos-baixo{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 50px;
+}
+
+.material,
+.capsideo,
+.lipidio,
+.envelope{
+    width: 432px;
+    height: 440px;
+}
+
+.geral-4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.geral-4 button{
+    background-color: #CFE0C3;
+    width: 350px;
+    height: 242px;
+    border-radius: 40px;
+}
+
+.p5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100svh;
+}
+
+.p5 img{
+    display: flex;
+    margin-right: 400px;
+    height: 800px;
+    margin-left: -200px;
+}
+
+.p5 button{
+    background-color: #538E96;
+    color: black;
+    border: none;
+    border-radius: 60px;
+    width: 270px;
+    height: 69px;
+    font-size: 30px;
+}
+
+.cv,
+.sp,
+.se{
+    padding: 50px 40px;
+}
+
+.p6{
+    background-color: #CFE0C3;
+    height: 100svh;
+    display: flex;
+}
+
+.p6 button{
+    background-color: #538E96;
+    color: black;
+    border: none;
+    border-radius: 60px;
+    width: 379px;
+    height: 131px;
+    font-size: 30px;   
+}
+
+.botao-atividade,
+.botao-curiosidade{
+    flex-direction: column;
+    margin: 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+.perninha{
+    display: flex;
+}
+
+.morbus-p6{
+    padding:  80px 60px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 800;
+}
+
+.p7{
+    background-color: #538E96;
+    height: 100svh;
+}
+
+.morbus-p7{
+    padding: 80px 60px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 800;
+}
+
+.geral-7 h2{
+    color: #CFE0C3;
+    font-size: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+.geral-7 h3{
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-size: 70px;
+}
+
+.geral-7 p{
+    display: flex;
+    justify-content: center;
+    text-align: right;
+    font-size: 50px;
+}
+
+.geral-7 img{
+    display: flex;
+    justify-content: center;
+}
+
+.p8{
+    color: #fff;
+    height: 100svh;
+}
+
+.p8 h1{
+    display: flex;
+    justify-content: center;
+    font-size: 80px;
+}
+
+.geral-8{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 40px;
+    gap: 400px;
+}
+
+.artista-1 a,
+.artista-2 a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.geral-8 img{
+    height: 74px;
+    width: 74px;
 }
 
