@@ -49,10 +49,10 @@ a{
 
 .geral img{
     display: flex;
-    width: 600px;
-    height: 600px;
+    width: 900px;
+    height: 900px;
     position: absolute;
-    right: 50px;
+    right: 90px;
     top: 150px;
 }
 
@@ -165,19 +165,22 @@ a{
     border-radius: 40px;
 }
 
-.p5{
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
+.p5 {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 70px;
+    align-items: center;
     height: 100svh;
 }
 
 .p5 img{
     display: flex;
-    margin-right: 400px;
-    height: 800px;
-    margin-left: -200px;
+    position: absolute;
+    left: 10px;
+    top: 3830px;
+    height: 950px;
+
 }
 
 .p5 button{
@@ -188,12 +191,19 @@ a{
     width: 270px;
     height: 69px;
     font-size: 30px;
+
 }
 
 .cv,
 .sp,
 .se{
     padding: 50px 40px;
+}
+
+.cv button,
+.sp button,
+.se button {
+    margin-right: 10px;
 }
 
 .p6{
@@ -236,7 +246,7 @@ a{
 }
 
 .morbus-p7{
-    padding: 80px 60px;
+    padding:  80px 60px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 800;
 }
@@ -298,3 +308,32 @@ a{
     width: 74px;
 }
 
+.telefone {
+    margin-top: 20px;
+}
+
+
+.geral-7 h2 {
+    text-transform: uppercase;
+}
+
+.geral-7 .centro {
+    margin-left: 500px;
+}
+
+.centro {
+    display: flex;
+    flex-direction: column;
+    justify-content:left;
+    align-items:flex-start;
+    width: fit-content;
+    gap: 20px;
+}
+
+.centro h3 {
+    font-size: 60px;
+}
+
+.centro p{
+    font-size: 30px;
+}
