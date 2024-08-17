@@ -49,8 +49,8 @@ a{
 
 .geral img{
     display: flex;
-    width: 900px;
-    height: 900px;
+    width: 700px;
+    height: 700px;
     position: absolute;
     right: 90px;
     top: 150px;
@@ -244,6 +244,8 @@ a{
 
 .perninha{
     display: flex;
+    position: absolute;
+    right: 50px;
 }
 
 .morbus-p6{
