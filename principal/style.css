@@ -175,8 +175,7 @@ a{
 
 .p5 {
     display: flex;
-    justify-content: flex-end;
-    padding-right: 70px;
+    justify-content: space-around;
     align-items: center;
     height: 100svh;
 }
@@ -184,9 +183,15 @@ a{
 .p5 img{
     display: flex;
     justify-content: flex-start;
-    height: 950px;
-    width: fit-content;
+    height: 700px;
+}
 
+.p5 .geral-5 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100svh;
 }
 
 .p5 button{
