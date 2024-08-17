@@ -115,7 +115,10 @@ a{
 .geral-2 img,
 .geral-4 img{
     margin-left: -10px;
+    height: 450px;
+    width: 400px;
 }
+
 
 .geral-2 button{
     background-color: #CFE0C3;
@@ -165,6 +168,10 @@ a{
     border-radius: 40px;
 }
 
+.p4 > h1 {
+    margin-bottom: 50px;
+}
+
 
 .p5 {
     display: flex;
@@ -176,10 +183,9 @@ a{
 
 .p5 img{
     display: flex;
-    position: absolute;
-    left: 10px;
-    top: 3830px;
+    justify-content: flex-start;
     height: 950px;
+    width: fit-content;
 
 }
 
@@ -219,16 +225,17 @@ a{
     border-radius: 60px;
     width: 379px;
     height: 131px;
-    font-size: 30px;   
+    font-size: 30px;  
 }
 
 .botao-atividade,
 .botao-curiosidade{
     flex-direction: column;
-    margin: 200px;
+    margin: 30px 350px 180px 200px;
     justify-content: center;
     align-items: center;
 }
+
 
 .perninha{
     display: flex;
@@ -286,6 +293,7 @@ a{
     display: flex;
     justify-content: center;
     font-size: 80px;
+    padding-top: 50px;
 }
 
 .geral-8{
@@ -294,6 +302,7 @@ a{
     text-align: center;
     font-size: 40px;
     gap: 400px;
+    margin-top: 50px;
 }
 
 .artista-1 a,
@@ -318,7 +327,8 @@ a{
 }
 
 .geral-7 .centro {
-    margin-left: 500px;
+    padding-top: 10px;
+    margin-inline: auto;
 }
 
 .centro {
@@ -327,13 +337,33 @@ a{
     justify-content:left;
     align-items:flex-start;
     width: fit-content;
-    gap: 20px;
+    gap: 40px;
 }
 
 .centro h3 {
-    font-size: 60px;
+    font-size: 70px;
 }
 
 .centro p{
     font-size: 30px;
+}
+
+.midias {
+    display: flex;
+    flex-direction: column;
+}
+.midias a img {
+    width: 80px;
+    height: 80px;
+}
+
+.imgs {
+    cursor: pointer;
+    display: flex;
+}
+
+.midiascredito {
+    display: flex;
+    width: fit-content;
+    margin-inline: auto;
 }
