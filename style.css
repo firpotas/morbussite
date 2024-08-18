@@ -127,6 +127,17 @@ a{
     border-radius: 40px;
 }
 
+.geral-3 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.geral-3 #centrovirus {
+    height: 500px;
+    width: 500px;
+    margin-block: auto;
+}
+
 .geral-3 h2{
     color: #CFE0C3;
     font-size: 40px;
@@ -143,6 +154,7 @@ a{
 .textos-baixo{
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
     margin: 0px 50px;
 }
 
