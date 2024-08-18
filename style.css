@@ -112,11 +112,15 @@ a{
     text-align: center;
 }
 
-.geral-2 img,
-.geral-4 img{
+.geral-2 img{
     margin-left: -10px;
+    height: 500px;
+    width: 450px;
+}
+
+.geral-4 #herpebolinha {
     height: 450px;
-    width: 400px;
+    width: 425px;
 }
 
 
@@ -125,6 +129,12 @@ a{
     width: 350px;
     height: 242px;
     border-radius: 40px;
+}
+
+.geral-4 img{
+    margin-left: -10px;
+    height: 450px;
+    width: 400px;
 }
 
 .geral-3 {
