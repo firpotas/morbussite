@@ -1,0 +1,3 @@
+[submodule "curiosidades"]
+	path = curiosidades
+	url = https://github.com/kworitos/curiosidades.git
