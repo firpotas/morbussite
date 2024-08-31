@@ -11,9 +11,9 @@
     --bg2-color: #0B2027;
     --letra: #fff;
     --botao: #344F51;
- }
+}
 
- body {
+body {
     font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
@@ -23,64 +23,27 @@
     background-color: var(--bg-color);
 }
 
-.tudo {
+main {
     display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
-.cima {
-    display: flex;
-    align-items: center;
-    margin-bottom: -30px;
+.container {
+    background-color: #0B2027;
+    padding: 40px;
+    width: 700px;
 }
 
-.bola{
-width: 30px;
-height: 30px;
-background-color: var(--bg2-color);
-border-radius: 50%;
-margin-right: 10px;
-}
-
-.pergunta{
-width: 400px;
-height: 30px;
-background-color: var(--bg2-color);
-border-radius: 36px;
-}
-
-.rp {
-    background-color: var(--bg2-color);
+.emcima h2 {
     color: white;
-    padding: 100px;
-    border-radius: 36px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    width: 600px;
-    text-align: center;
 }
 
-.r1,.r2,.r3,.r4{
-    background-color: var(--botao);
-    color: var(--letra);
-    text-decoration: none;
-    padding: 15px 60px;
-    margin: 5px 0px;
-    border: none;
-    border-radius: 12px;
-    font-size: 14px;
-    font-weight: bold;
-    display: block;
-    width: 100%;
+form div {
+    background-color: #344F51;
+    border-radius: 16px;
+    height: 40px;
 }
 
-.botoes{
-    position: relative;
-    top: 20px;
+form div {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 10px;
-    
+    align-items: center;
 }
-

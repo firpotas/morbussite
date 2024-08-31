@@ -4,8 +4,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="style.css" />
   <title>Morbus</title>
+  <script src="./script.js" defer type="module"></script>
 </head>
 
 <body>
@@ -58,6 +59,68 @@
             <a href="#">Parainfluenza</a>
           </button>
         </div>
+      </div>
+      <div style="display: none;" class="aparecerCorona">
+        <div class="cabecalho-textos-virus">
+          <img class="seta-voltar" src="./imagens/cortadinha.png" alt="seta de voltar">
+          <h1 class="respiratorio">Corona Virus</h1>
+        </div>
+        <p class="texto-virus">A COVID-19 é uma doença
+          respiratória causada pelo coronavírus
+          SARS-CoV-2, que pode gerar
+          sintomas como febre, tosse seca e
+          perda de olfato e paladar.
+
+          Transmitido pelo contato de saliva ou
+          secreções respiratórias, ou toque em
+          superfícies contaminadas e levar as
+          mãos ao rosto.
+
+          O tratamento depende da gravidade
+          dos sintomas e pode incluir repouso,
+          medicamentos, e, em casos graves,
+          internação.
+        </p>
+      </div>
+      <div style="display: none;" class="aparecerVSR">
+        <div class="cabecalho-textos-virus">
+          <img class="seta-voltar1" src="./imagens/cortadinha.png" alt="seta de voltar">
+          <h1 class="respiratorio">VSR</h1>
+        </div>
+        <p class="texto-virus">O Vírus Sincicial Respiratório (VSR)
+          é um agente viral amplamente
+          disseminado que provoca infecções
+          respiratórias, afetando
+          predominantemente crianças
+          pequenas, embora adultos também
+          possam ser acometidos. Este vírus é
+          uma das principais causas de
+          doenças respiratórias graves em
+          bebês e crianças, frequentemente
+          resultando em bronquiolite e
+          pneumonia, que podem exigir
+          cuidados médicos intensivos devido
+          à gravidade dos sintomas.
+        </p>
+      </div>
+      <div style="display: none;" class="aparecerPara">
+        <div class="cabecalho-textos-virus">
+          <img class="seta-voltar2" src="./imagens/cortadinha.png" alt="seta de voltar">
+          <h1 class="respiratorio">ParaInfluenza</h1>
+        </div>
+        <p class="texto-virus">Os vírus parainfluenza humana
+          (HPIVs) causam desde resfriados até
+          doenças respiratórias graves como
+          crupe e pneumonia, especialmente em
+          crianças. Eles pertencem à família dos
+          paramixovírus e são divididos em tipos
+          1, 2, 3 e 4, que variam na gravidade. As
+          infecções ocorrem em ambientes como
+          creches e escolas, com surtos sazonais
+          predominando no outono para os tipos
+          1 e 2, e o tipo 3 sendo comum na
+          primavera.
+        </p>
       </div>
     </section>
     <section class="p3">
@@ -115,9 +178,9 @@
             <a href="#">Arbovírus</a>
           </button>
         </div>
-        <div class="herpevirus">
+        <div class="herpesvirus">
           <img src="./imagens/arbo.png" alt="" />
-          <button class="botao-herpevirus">
+          <button class="botao-herpesvirus">
             <a href="#">Herpevírus</a>
           </button>
         </div>
@@ -128,24 +191,126 @@
           </button>
         </div>
       </div>
+      <div style="display: none;" class="aparecerArbo">
+        <div class="cabecalho-textos-virus">
+          <img class="seta-voltar3" src="./imagens/cortadinha.png" alt="seta de voltar">
+          <h1 class="respiratorio">Arbovírus</h1>
+        </div>
+        <p class="texto-virus">Arbovírus, ou vírus transmitidos por
+          artrópodes, representam uma vasta
+          gama de vírus que são transmitidos
+          aos humanos e a outros vertebrados
+          por meio da picada de artrópodes
+          hematófagos, como mosquitos e
+          carrapatos. A sigla "arbovírus" vem
+          de "arthropod-borne viruses", que
+          significa vírus transmitidos por
+          artrópodes. Esses vírus podem
+          causar uma variedade de doenças,
+          desde febres leves até condições
+          graves como encefalites e
+          hemorragias. Além de mosquitos e
+          carrapatos, outros artrópodes, como
+          flebotomíneos e moscas, também
+          podem desempenhar um papel na
+          transmissão desses vírus.
+        </p>
+      </div>
+      <div style="display: none;" class="aparecerHerpes">
+        <div class="cabecalho-textos-virus">
+          <img class="seta-voltar4" src="./imagens/cortadinha.png" alt="seta de voltar">
+          <h1 class="respiratorio">Herpesvírus</h1>
+        </div>
+        <p class="texto-virus">
+          Os herpesvírus, da família
+          Herpesviridae, são vírus de DNA
+          conhecidos por causar infecções
+          latentes, permanecendo no corpo ao
+          longo da vida após a infecção inicial.
+          Incluem HSV-1, HSV-2, varicela-zóster,
+          Epstein-Barr e citomegalovírus. Esses
+          vírus podem reativar-se devido a
+          fatores biológicos ou ambientais.
+          Pessoas imunodeprimidas, como
+          aquelas com HIV, são mais suscetíveis.
+          A transmissão ocorre por contato
+          direto ou indireto, através de secreções
+          orais e fluidos corporais.
+        </p>
+      </div>
+      <div style="display: none;" class="aparecerEntero">
+        <div class="cabecalho-textos-virus">
+          <img class="seta-voltar5" src="./imagens/cortadinha.png" alt="seta de voltar">
+          <h1 class="respiratorio">Enterovírus</h1>
+        </div>
+        <p class="texto-virus">Os enterovírus pertencem à família
+          Picornaviridae e são uma das
+          principais causas de doenças
+          infecciosas em humanos, especialmente
+          em crianças. Eles são altamente
+          contagiosos e podem provocar uma
+          variedade de doenças, desde infecções
+          leves como resfriados e gastroenterites
+          até condições graves, como meningite
+          viral e paralisia flácida aguda. A
+          transmissão ocorre principalmente por
+          ingestão de contaminados e por
+          secreções respiratórias. Os enterovírus
+          são notórios por causar surtos sazonais
+          e epidemias, e podem ser
+          particularmente perigosos para
+          pessoas com sistemas imunológicos
+          comprometidos.
+        </p>
+      </div>
     </section>
     <section class="p5">
-      <img src="./imagens/corpinho.png" alt="" />
-      <div class="geral-5">
+      <img class="corpo-original" src="./imagens/corpinho.png" alt="" />
+      <h2 class="paravermais">Passe o mouse em cima para ver mais</h2>
+      <div class="popup">
         
+        <h3>Coronavírus</h3>
+        <p>Lorem ipsum dolor, sit amet codfasdasghj saodh saojhdaojsnd oasnda</p>
+      </div>
+      <div class="popup1">
+        <h3>VSR</h3>
+        <p>Lorem ipsum dolor, sit amet codfasdasghj saodh saojhdaojsnd oasnda</p>
+      </div>
+      <div class="popup2">
+        <h3>Shigella</h3>
+        <p>Lorem ipsum dolor, sit amet codfasdasghj saodh saojhdaojsnd oasnda</p>
+      </div>
+      <div class="popup3">
+        <h3>Parainfluenza</h3>
+        <p>Lorem ipsum dolor, sit amet codfasdasghj saodh saojhdaojsnd oasnda</p>
+      </div>
+      <div class="popup4">
+        <h3>Salmonella</h3>
+        <p>Lorem ipsum dolor, sit amet codfasdasghj saodh saojhdaojsnd oasnda</p>
+      </div>
+      <div class="popup5">
+        <h3>Escherichia Coli</h3>
+        <p>Lorem ipsum dolor, sit amet codfasdasghj saodh saojhdaojsnd oasnda</p>
+      </div>
+      <img class="corpo-coronaImg"  style="display: none;" src="./imagens-corpo/corpo1.png" alt="">
+      <img class="corpo-vsrImg"  style="display: none;" src="./imagens-corpo/corpo2.png" alt="">
+      <img class="corpo-shigellaImg" style="display: none;" src="./imagens-corpo/corpo3.png" alt="">
+      <img class="corpo-paraImg" style="display: none;" src="./imagens-corpo/corpo4.png" alt="">
+      <img class="corpo-salmonellaImg"  style="display: none;" src="./imagens-corpo/corpo5.png" alt="">
+      <img class="corpo-coliImg" style="display: none;" src="./imagens-corpo/corpo6.png" alt="">
+      <div class="geral-5">
         <div class="cv">
-          <button>Coronavírus</button>
-          <button>VSR</button>
+          <button class="corpo-corona">Coronavírus</button>
+          <button class="corpo-vsr">VSR</button>
         </div>
         <div class="sp">
-          <button>Shigella</button>
-          <button>Paranfluenza</button>
+          <button class="corpo-shigella">Shigella</buttonc>
+          <button class="corpo-para">Paranfluenza</button>
         </div>
         <div class="se">
-          <button>Salmonella</button>
-          <button>Escherichia Coli</button>
+          <button class="corpo-salmonella">Salmonella</button>
+          <button class="corpo-coli">Escherichia Coli</button>
         </div>
-
       </div>
     </section>
     <section class="p6">
@@ -155,7 +320,7 @@
           <a href="./quiz/quiz.html"><button>Atividades</button></a>
         </div>
         <div class="botao-curiosidade">
-          <a href="./curiosidades/curiosidades.html"><button>Curiosidades</button></a>
+          <a href="./curiosidades/index.html"><button>Curiosidades</button></a>
         </div>
       </div>
       <div class="perninha"><img src="./imagens/perninha.png" alt="" /></div>
@@ -171,7 +336,8 @@
           </div>
           <div>
             <h3 class="email"> Email</h3>
-            <a href="https://mail.google.com/mail/u/0/?ogbl" target="_blank"><p>morbusite@gmail.com</p>
+            <a href="https://mail.google.com/mail/u/0/?ogbl" target="_blank">
+              <p>morbusite@gmail.com</p>
           </div>
           <div class="midias">
             <h3 class="">

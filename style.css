@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: titulo;
+    src: url(Ahsing-Regular.otf);
+}
+
 header{
     background-color:#CFE0C3;    
     height: 75px;
@@ -19,6 +24,11 @@ a{
     font-size: 25px;
 }
 
+a:hover {
+    transition: transform 0.3s ease-in-out;
+    transform: scale(1.05);
+}
+
 .nav-cabecalho{
     display: flex;
     justify-content: space-between;
@@ -31,9 +41,17 @@ a{
     font-size: 30px;
 }
 
+
+
 .morbus{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 800;
+}
+
+.morbus:hover,
+.nav-cabecalho div:hover {
+    transition: transform 0.1s ease-in-out;
+    transform: scale(1.03);
 }
 
 .titulo-texto{
@@ -49,8 +67,8 @@ a{
 
 .geral img{
     display: flex;
-    width: 700px;
-    height: 700px;
+    width: 900px;
+    height: 900px;
     position: absolute;
     right: 90px;
     top: 150px;
@@ -195,18 +213,21 @@ a{
 }
 
 
-.p5 {
+.p5{
     display: flex;
     justify-content: space-around;
     align-items: center;
     height: 100svh;
 }
 
+
+
 .p5 img{
     display: flex;
     justify-content: flex-start;
     height: 700px;
 }
+
 
 .p5 .geral-5 {
     display: flex;
@@ -253,6 +274,11 @@ a{
     width: 379px;
     height: 131px;
     font-size: 30px;  
+}
+
+.p6 button:hover {
+    transition: transform 0.3s ease-in-out;
+    transform: scale(1.06);
 }
 
 .botao-atividade,
@@ -398,4 +424,92 @@ a{
     display: flex;
     width: fit-content;
     margin-inline: auto;
+}
+
+.p2 .texto-virus  {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 300px;
+    font-size: 50px;
+    margin-top: 120px;
+    text-align: center;
+}
+
+.p4 .texto-virus  {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 300px;
+    font-size: 50px;
+    margin-top: 120px;
+    text-align: center;
+
+}
+
+.cabecalho-textos-virus {
+    display: flex;
+    justify-content: center;
+}
+
+
+.cabecalho-textos-virus img {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    left: 40px;
+}
+
+.cabecalho-textos-virus img:hover {
+    transition: transform 0.3s ease-in-out;
+    transform: scale(1.08);
+}
+
+.geral-2 button:hover {
+    transition: transform 0.3s ease-in-out;
+    transform: scale(1.08);
+}
+
+.geral-4 button:hover {
+    transition: transform 0.3s ease-in-out;
+    transform: scale(1.08);
+}
+
+.geral-5 button:hover {
+    transition: transform 0.3s ease-in-out;
+    transform: scale(1.05);
+}
+
+.popup,
+.popup1, .popup2, .popup3, .popup4, .popup5  {
+    display: none;
+    position: absolute;
+    width: 200px;
+    color: black;
+    left: 500px;
+    margin-bottom: 600px;
+    z-index: 999;
+    border: 1px solid black;
+    padding: 20px;
+    background-color: white;
+    border-radius: 16px;
+}
+
+.popup h3,.popup1 h3, .popup2 h3, .popup3 h3, .popup4 h3, .popup5 h3 {
+    display: flex;
+    justify-content: center;
+}
+
+.popup p, .popup1 p, .popup2 p , .popup3 p, .popup4 p, .popup5 p{
+    text-align: center;
+}
+
+.paravermais {
+    display: none;
+    color: white;
+    position: absolute;
+    left: 250px;
+    margin-bottom: 800px;
 }
