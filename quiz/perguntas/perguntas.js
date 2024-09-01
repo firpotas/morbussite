@@ -1,6 +1,7 @@
 import { data } from "../dadosniveis/data.js";
+let nivel = localStorage.getItem("nivel")
 
-let quiz = data.quizzes[0]; // Definindo quiz com o primeiro nível
+let quiz = data.quizzes[0];
 let pontos = 0;
 let pergunta = 1;
 let resposta = "";
@@ -9,10 +10,8 @@ let respostaCorretaId = "";
 
 function montarPergunta() {
     const main = document.querySelector("main");
-    console.log("Montando pergunta...");
-
-    if (quiz && quiz.questões && quiz.questões.length > 0) {
-        const questao = quiz.questões[pergunta - 1]; // Ajustando para o índice correto
+    if (quiz && quiz.questões && quiz.questões.length < 1000) {
+        const questao = quiz.questões[pergunta - 1];
         main.innerHTML = 
         ` 
         <section class="pergunta">
@@ -35,10 +34,8 @@ function montarPergunta() {
                 <button>Enviar</button>
             </section>
         </section>`;
-    } else {
-        console.error("Não há perguntas disponíveis.");
-    }
 }
+} 
 
 function guardarResposta(evento) {
     resposta = evento.target.value;
@@ -49,27 +46,28 @@ function guardarResposta(evento) {
 
 function validarResposta() {
     const botaoEnviar = document.querySelector(".alternativas button"); 
-    botaoEnviar.innerText = "Próxima";
-    botaoEnviar.removeEventListener("click", validarResposta);
-
-    if (pergunta === quiz.questões.length) {
-        botaoEnviar.innerText = "Finalizar";
-        botaoEnviar.addEventListener("click", finalizar);
-    } else {
-        botaoEnviar.addEventListener("click", proximaPergunta);
-    }
 
     const questao = quiz.questões[pergunta - 1];
-    if (resposta === questao.certa) {
+    const respostaCerta = questao.certa;
+    
+    if (resposta === respostaCerta) {
         document.querySelector(`label[for='${idInputResposta}']`).setAttribute("id", "correta");
         pontos += 1;
     } else {
         document.querySelector(`label[for='${idInputResposta}']`).setAttribute("id", "errada");
-        respostaCorretaId = quiz.questões[pergunta - 1].respostas.findIndex(r => r === questao.certa);
+        respostaCorretaId = questao.respostas.findIndex(r => r === respostaCerta);
         document.querySelector(`label[for='alternativa_${respostaCorretaId}']`).setAttribute("id", "correta");
     }
 
-    pergunta += 1;
+    document.querySelectorAll(".alternativas input").forEach(input => {
+        input.disabled = true;
+    });
+
+    setTimeout(() => {
+        botaoEnviar.innerText = pergunta === quiz.questões.length ? "Finalizar" : "Próxima";
+        botaoEnviar.removeEventListener("click", validarResposta);
+        botaoEnviar.addEventListener("click", pergunta === quiz.questões.length ? finalizar : proximaPergunta);
+    }, 1000);
 } 
 
 function finalizar() {
@@ -78,6 +76,7 @@ function finalizar() {
 }
 
 function proximaPergunta() {
+    pergunta += 1;
     montarPergunta();
     adicionarEventoInputs();
 }
@@ -94,7 +93,7 @@ function adicionarEventoInputs() {
 }
 
 async function iniciar() {
-    console.log("Iniciando quiz...");
+    console.log("iniciando quiz...");
     montarPergunta();
     adicionarEventoInputs();
 }
