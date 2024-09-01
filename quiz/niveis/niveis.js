@@ -3,8 +3,9 @@ const medio = document.querySelector(".b_medio")
 const dificil = document.querySelector(".b_dificil")
 let nivel = 0
 
-facil.addEventListener("mouseover", function(){
-    console.log(nivel)
+
+facil.addEventListener("click", function(){
+    localStorage.setItem('nivel', "Fácil")
     nivel = 1
 })
 
@@ -17,3 +18,4 @@ dificil.addEventListener("mouseover", function(){
     console.log(nivel)
     nivel = 3
 })
+

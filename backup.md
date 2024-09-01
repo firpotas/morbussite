@@ -1,23 +1,40 @@
-<section class="p2">
-      <h1 class="respiratorio">Virus: Sistema Respiratório</h1>
-      <div class="geral-2">
-        <div class="corona">
-          <img src="./imagens/covid.png" alt="" />
-          <button class="botao-corona">
-            <a href="#">Corona Vírus</a>
-          </button>
-        </div>
-        <div class="vsr">
-          <img src="./imagens/vsr.png" alt="" />
-          <button class="botao-vsr">
-            <a href="#">VSR</a>
-          </button>
-        </div>
-        <div class="influenza">
-          <img src="./imagens/parainfluenza.png" alt="" />
-          <button class="botao-influenza">
-            <a href="#">Parainfluenza</a>
-          </button>
-        </div>
-      </div>
-    </section>
+ <div class="emcima"> 
+                <p1>1</p1>
+                <h2>Qual é a principal característica dos herpesvírus?
+                </h2>
+            </div>
+            <section class="alternativas">
+                <form action="">
+                    <label for="alternativa_a">
+                        <input type="radio" id="alternativa_a" name="alternativa"
+                            value="#">
+                        <div>
+                            <span>A</span>
+                            Causam infecções latentes
+                        </div>
+                    </label>
+                    <label for="alternativa_b">
+                        <input type="radio" id="alternativa_b" name="alternativa"
+                            value="#">
+                        <div>
+                            <span>B</span>
+                            São transmitidos por água
+                        </div>
+                    </label>
+                    <label for="alternativa_c">
+                        <input type="radio" id="alternativa_c" name="alternativa"
+                            value="#">
+                        <div>
+                            <span>C</span>
+                            Causam doenças respiratórias
+                        </div>
+                    </label>
+                    <label for="alternativa_d">
+                        <input type="radio" id="alternativa_d" name="alternativa"
+                            value="#">
+                        <div>
+                            <span>D</span>
+                            São vírus de RNA
+                        </div>
+                    </label>
+                </form>
