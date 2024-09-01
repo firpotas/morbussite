@@ -191,6 +191,16 @@ export const perguntas =
             certa: "Enterovírus" 
         },
         {
+            pergunta: "Qual dos seguintes sintomas é comum em infecções por arbovírus?",
+            respostas: [
+                "Diarreia",
+                "Febre leve",
+                "Dor abdominal",
+                "Erupção cutânea"
+            ],
+            certa: "Febre leve" 
+        },
+        {
             pergunta: "Qual vírus é conhecido por causar paralisia flácida aguda?",
             respostas: [
                 "Epstein-Barr",
@@ -206,7 +216,104 @@ export const perguntas =
     title: "Dificil",
     questões: [
         {
-            
+            pergunta: "Qual é a principal forma de transmissão dos herpesvírus?",
+            respostas: [
+                "Contato com fluidos corporais",
+                "Picadas de insetos",
+                "Contato com água contaminada",
+                "Contato com superfícies contaminadas"
+            ],
+            certa: "Contato com fluidos corporais" 
+        },
+        {
+            pergunta: "Quais fatores podem reativar os herpesvírus?",
+            respostas: [
+                "Fatores ambientais e biológicos",
+                "Exposição ao sol",
+                "Contato com água contaminada",
+                "Dieta inadequada"
+            ],
+            certa: "Fatores ambientais e biológicos" 
+        },
+        {
+            pergunta: "Qual vírus da Herpesviridae é conhecido por causar citomegalovírus?",
+            respostas: [
+                "HSV-1",
+                "Varicela-zóster",
+                "Epstein-Barr",
+                "Citomegalovírus"
+            ],
+            certa: "Citomegalovírus" 
+        },
+        {
+            pergunta: "Qual das seguintes condições não é causada pelos arbovírus?",
+            respostas: [
+                "Febres leves",
+                "Encefalites",
+                "Gastroenterites",
+                "Hemorragias"
+            ],
+            certa: "Gastroenterites" 
+        },
+        {
+            pergunta: "Qual é a principal diferença entre o tipo 1 e o tipo 2 dos vírus parainfluenza?",
+            respostas: [
+                "Tipo 1 causa doenças respiratórias leves",
+                "Tipo 2 está associado a surtos sazonais predominantes no outono",
+                "Tipo 1 é mais comum na primavera",
+                "Tipo 2 causa apenas resfriados"
+            ],
+            certa: "Tipo 2 está associado a surtos sazonais predominantes no outono" 
+        },
+        {
+            pergunta: "Qual é a característica distintiva dos herpesvírus em relação a outros vírus?",
+            respostas: [
+                "Permanecem latentes no corpo após a infecção inicial",
+                "Causam apenas doenças digestivas",
+                "São transmitidos exclusivamente por picadas de insetos",
+                "Causam doenças respiratórias"
+            ],
+            certa: "Permanecem latentes no corpo após a infecção inicial" 
+        },
+        {
+            pergunta: "Qual vírus é transmitido por picadas de mosquitos e flebotomíneos?",
+            respostas: [
+                "Herpesvírus",
+                "Enterovírus",
+                "Arbovírus",
+                "Coronavirus"
+            ],
+            certa: " Arbovírus" 
+        },
+        {
+            pergunta: "Qual é a principal forma de prevenção para infecções por enterovírus?",
+            respostas: [
+                "Vacinação",
+                "Uso de repelentes",
+                "Higiene pessoal adequada",
+                "Evitar contato com superfícies contaminadas"
+            ],
+            certa: "Higiene pessoal adequada" 
+        },
+        {
+            pergunta: "Qual é a principal complicação grave associada ao Vírus Sincicial Respiratório (VSR)?",
+            respostas: [
+                "Meningite",
+                "Pneumonia grave",
+                "Herpes genital",
+                " Catapora"
+            ],
+            certa: "neumonia grave" 
+        },
+        {
+            pergunta: "Qual é uma característica única dos arbovírus em comparação com outros vírus?",
+            respostas: [
+                "São transmitidos por contato direto com secreções orais",
+                "São transmitidos por artrópodes hematófagos",
+                "Causam apenas infecções respiratórias",
+                "São de RNA e DNA simultaneamente"
+            ],
+            certa: "São transmitidos por artrópodes hematófagos" 
         }
     ]
 }
